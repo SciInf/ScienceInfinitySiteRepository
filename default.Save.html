@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" /> 
+    <!-- link rel="stylesheet" href="css/redmond/jquery-ui-1.10.0.custom.min.css"/-->
+    <link rel="stylesheet" href="jquery-ui-1.11.4.custom/jquery-ui.min.css"/>
+    <script src="scripts/jquery-2.1.4.min.js"></script>
+    <script src="jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+    <script  type="text/javascript" src="scripts/jquery.cycle2.min.js"></script>
+
+	<link href="css/style1.css?7" media="screen" rel="stylesheet" title="CSS" type="text/css" />
+    <script type="">
+	    $(function() {
+	        $( "#maintabs" ).tabs();
+//	        $( "#maintabs" ).tabs().addClass( "ui-maintabs-vertical" );
+
+			$('.slideshow').cycle();
+			// HACK Needed to set here instead of style, because the above tabs.addClass overwrites
+			$('.class-overlay').removeClass('class-overlay').addClass('class-overlay');
+
+			$( '.slideshow div')
+				.css("display", "block")
+				.css("margin", "0 0 0 50px")
+				.css("width","600"); 
+			    
+			$( '.slideshow img')
+				.css("display", "block")
+				.css("margin", "auto")
+				.css("width","700")
+				.css("height","auto")
+				.css("max-height", "600");
+	    });
+    </script>
+    
+    <style type="text/css">
+	    .ui-maintabs-vertical { margin:0 0 0 0.4em; padding:0; width:98.5%;}
+
+		.class-overlay
+		{	
+			box-sizing: border-box;
+			color:#fff;
+			background:#000;
+			opacity:0.5;
+			filter:alpha(opacity=60);
+			position:absolute;
+			bottom:0;
+			width:100%;
+		}
+    </style>
+
+	<title>Home</title>
+</head>
+
+<body>
+
+
+<!-- Begin Container -->
+<div id="container">
+	<div id="masthead">
+		<a href="default.html"><img style="border:0; " alt="Science Infinity" height="66" src="images/logo.png" width="600" /></a>
+	</div>
+
+	<div id="maintabs">
+	    <ul>
+			<li><a href="#maintabs-1">Home</a></li>			
+			<li><a href="YBTC/YBTC.html">YBTC</a></li>
+			<li><a href="Results.html">Results</a>&nbsp;&nbsp; </li>
+			<li><a href="FAQ.html">FAQ</a>&nbsp;&nbsp; </li>
+			<li><a href="About.html">About</a></li>
+	    </ul>
+	    <div id="maintabs-1">
+
+			<!-- fx values blindX,blindY,blindZ,cover,curtainX,curtainY,fade,fadeZoom,growX,growY,scrollUp,scrollDown,scrollLeft,scrollRight,scrollHorz,scrollVert,shuffle,slideX,slideY,toss,turnUp,turnDown,turnLeft,turnRight,uncover,wipe,zoom -->
+			<div class="slideshow" 
+			    data-cycle-fx="fade" 
+			    data-cycle-slides="> div"
+				data-cycle-pause-on-hover="false" 
+				data-cycle-speed="500" 
+				data-cycle-random="false"
+				data-cycle-timeout="2500"
+			    >
+
+			    <div>
+			        <img src="images/2015 BPA Science Bowl.jpg">
+			        <div class="class-overlay" style="left:0;">2015 BPA Middle School Regional Runner Up</div>
+			    </div>
+
+			    <div>
+			        <img src="images/2014 BPA MS Regionals.jpg">
+			        <div class="class-overlay" >2014 BPA Middle School Regional Winner qualified for Nationals</div>
+			    </div>
+
+			    <div>
+			        <img src="images/2013 Spokane Regionals.jpg">
+			        <div class="class-overlay" >2013 WA State Middle School Science Bowl Regional Winner qualified for Nationals</div>
+			    </div>
+
+			    <div>
+			        <img src="images/National Science Bowl 2012 (51) (800x526).jpg">
+			        <div class="class-overlay" >2012 National Science Bowl Third Place Team</div>
+			    </div>
+
+			    <div>
+			        <img src="images/Aum5-2015.jpg">
+			        <div class="class-overlay" >2015 YBTC National Runner Up</div>
+			    </div>
+
+			    <div>
+			        <img src="images/2015 YBTC State Challenge All Qualifiers.JPG">
+			        <div class="class-overlay" >2015 YBTC WA State Challenge</div>
+			    </div>
+
+			    <div>
+			        <img src="images/2015 YBTC State Challenge Top 4.JPG">
+			        <div class="class-overlay" >2015 YBTC WA State Challenge Top 4</div>
+			    </div>
+
+			    <div>
+			        <img src="images/2013 YBTC.JPG">
+			        <div class="class-overlay" >2013 YBTC WA State Challenge</div>
+			    </div>
+
+			    <div>
+			        <img src="images/2013 YBTC National Champion.JPG">
+			        <div class="class-overlay" >2013 YBTC National Champion</div>
+			    </div>
+			</div>
+
+			<h3><a href="2013 YBTC PR Newswire.pdf"target="_blank">2013 You Be The Chemist (YBTC): Press Release 4/22/2013</a></h3>
+			<h3>***2013 YBTC Washington State Challenge Results are in! Check it out***</h3>
+			<p>&nbsp;</p>
+			<h3>Again, for the second year in a row, Science Infinity won the 
+			Regional Science Bowl Competition!!</h3>
+			<h3><a href="2013 Science Bowl PR Newswire.pdf"target="_blank">2013 Inland Regional Science Bowl: Press Release 3/2/2013</a></h3>
+			<h3>The Science Infinity is formed for the following purposes</h3>
+			<ul>
+				<li>Prepare students for academic excellence in science through coaching, on-the-go interactions and competitions with other like-minded students
+				</li>
+				<li>Develop young leaders by providing leadership roles and opportunities to achieve the current mission.
+				</li>
+				<li>Raise the bar in science education and research. 
+				</li>
+			</ul>		
+			<p>This is a non profit organization. We share simillar goals as North South Foundation (NSF). 
+				Since it is run exclusively by volunteers, we don't have expenses. The only expenses we incur is 
+				if we buy any student supplies.
+			</p>
+			<p><strong>If you want your child to join Science Infinity, please 
+			visit the FAQ page. You will find the information to join..</strong></p>
+		</div>
+	</div>
+
+	<!-- Begin Footer -->
+	<div id="footer">
+		<p>Copyright &copy; 2013 Science Infinity. All Rights Reserved.</p>
+	</div>
+	<!-- End Footer -->
+</div>
+<!-- End Container -->
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>
